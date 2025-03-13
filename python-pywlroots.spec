@@ -23,4 +23,4 @@ keyboard functionality.}
 %license LICENSE
 %doc README.rst
 %{python_sitelib}/pywlroots-%{version}.dist-info
-#{python_sitelib}/pywlroots/
+%{python_sitelib}/wlroots/
