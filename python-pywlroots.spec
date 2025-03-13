@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 Name:           python-pywlroots
 Version:        0.17.0
 Release:        1
