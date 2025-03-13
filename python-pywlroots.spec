@@ -7,8 +7,7 @@ License:        NCSA
 URL:            https://github.com/flacjacket/pywlroots
 Source0:        https://files.pythonhosted.org/packages/source/p/pywlroots/pywlroots-%{version}.tar.gz
 
-BuildRequires: python3-devel
-BuildRequires: python3-pytest
+BuildRequires: pkgconfig(python3)
 BuildRequires: (pkgconfig(wlroots) >= 0.17.0 with pkgconfig(wlroots) < 0.18)
 BuildSystem:  python
 
