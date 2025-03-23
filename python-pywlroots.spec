@@ -10,6 +10,7 @@ Source0:        https://files.pythonhosted.org/packages/source/p/pywlroots/pywlr
 
 BuildRequires: pkgconfig(python3)
 BuildRequires: (pkgconfig(wlroots) >= 0.17.0 with pkgconfig(wlroots) < 0.18)
+Requires:  python-xkbcommon
 BuildSystem:  python
 
 
