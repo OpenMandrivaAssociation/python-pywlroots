@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name:           python-pywlroots
 Version:        0.17.0
-Release:        1
+Release:        2
 Summary:        Python binding to the wlroots library using cffi
 License:        NCSA
 
