@@ -10,7 +10,9 @@ Source0:        https://files.pythonhosted.org/packages/source/p/pywlroots/pywlr
 
 BuildRequires: pkgconfig(python3)
 BuildRequires: pkgconfig(wlroots-0.19)
+BuildRequires: python%{pyver}dist(pywayland)
 Requires:  python-xkbcommon
+Requires:  python%{pyver}dist(pywayland)
 BuildSystem:  python
 
 
