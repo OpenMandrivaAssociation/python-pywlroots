@@ -9,7 +9,7 @@ URL:            https://github.com/flacjacket/pywlroots
 Source0:        https://files.pythonhosted.org/packages/source/p/pywlroots/pywlroots-%{version}.tar.gz
 
 BuildRequires: pkgconfig(python3)
-BuildRequires: (pkgconfig(wlroots) >= 0.17.0 with pkgconfig(wlroots) < 0.18)
+BuildRequires: pkgconfig(wlroots-0.19)
 Requires:  python-xkbcommon
 BuildSystem:  python
 
