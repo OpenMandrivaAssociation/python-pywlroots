@@ -37,5 +37,5 @@ python ./wlroots/ffi_build.py
 %files
 %license LICENSE
 %doc README.rst
-%{python_sitelib}/pywlroots-%{version}.dist-info
-%{python_sitelib}/wlroots/
+#{python_sitelib}/pywlroots-%{version}.dist-info
+#{python_sitelib}/wlroots/
