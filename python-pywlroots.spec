@@ -11,18 +11,27 @@ Source0:        https://files.pythonhosted.org/packages/source/p/pywlroots/pywlr
 BuildRequires: pkgconfig(python3)
 BuildRequires: pkgconfig(wlroots-0.19)
 BuildRequires: python%{pyver}dist(pywayland)
-BuildRequires:	python%{pyver}dist(setuptools)
-BuildRequires:	python%{pyver}dist(pip)
+BuildRequires: python%{pyver}dist(setuptools)
+BuildRequires: python%{pyver}dist(pip)
+BuildRequires: python%{pyver}dist(xkbcommon)
+BuildRequires: python%{pyver}dist(cffi)
 Requires:  python-xkbcommon
 Requires:  python%{pyver}dist(pywayland)
-BuildSystem:  python
-
 
 %description
 A Python binding to the wlroots library using cffi. The library uses pywayland
 to provide the Wayland bindings and python-xkbcommon to provide wlroots
 keyboard functionality.}
 
+%prep
+%autosetup -n pywlroots-%{version} -p1
+
+%build
+python ./wlroots/ffi_build.py
+%py_build
+
+%install
+%py_install
 
 %files
 %license LICENSE
